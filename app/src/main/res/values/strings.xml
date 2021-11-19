@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>

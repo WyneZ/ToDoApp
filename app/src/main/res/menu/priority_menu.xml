@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/pLow"
+        android:title="@string/low"/>
+
+    <item android:id="@+id/pMedium"
+        android:title="@string/medium"/>
+
+    <item android:id="@+id/pHigh"
+        android:title="@string/high"/>
+</menu>
