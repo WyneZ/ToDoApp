@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout_background">
+
+    <EditText
+        android:id="@+id/et_InputTask"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/input_design"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:imeOptions="actionGo"
+        android:scrollbars="vertical"
+        android:hint="eg. Learn Coding"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/ib_Calendar"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:stateListAnimator="@drawable/button_background"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintTop_toBottomOf="@+id/et_InputTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/gray"/>
+
+    <ImageButton
+        android:id="@+id/ib_Flag"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@color/white"
+        android:src="@drawable/ic_flag"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_Calendar"
+        app:layout_constraintStart_toEndOf="@+id/ib_Calendar"
+        app:layout_constraintTop_toTopOf="@+id/ib_Calendar"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="@color/gray" />
+
+    <ImageButton
+        android:id="@+id/ib_sendTask"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_send"
+        android:background="@color/white"
+        app:tint="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/et_InputTask"
+        app:layout_constraintTop_toTopOf="@+id/ib_Flag"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_Flag" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ib_sendTask"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

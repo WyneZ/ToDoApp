@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_add.xml" value="0.37037037037037035" />
+        <entry key="app/src/main/res/drawable-v24/layout_background.xml" value="0.37037037037037035" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.4010416666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32447916666666665" />
+        <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/task_layout.xml" value="0.33" />
         <entry key="app/src/main/res/menu/function_menu.xml" value="0.32592592592592595" />
         <entry key="app/src/main/res/menu/priority_menu.xml" value="0.33" />
       </map>
