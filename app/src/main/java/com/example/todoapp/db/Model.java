@@ -1,5 +1,6 @@
 package com.example.todoapp.db;
 
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -17,19 +18,6 @@ public class Model {
     @ColumnInfo(name = "Priority")
     private int priority;
 
-    public String getTask() {
-        return task;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
+    @ColumnInfo(name = "Status")
+    private boolean completed;
 }
